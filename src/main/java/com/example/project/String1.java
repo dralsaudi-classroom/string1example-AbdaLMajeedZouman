@@ -42,6 +42,8 @@ public class String1 {
 	
     }
     public void reverse() {
+    	if(length() - 1 != -1) {
+
         int start = 0 ;
         int end = size;
         char holder = str[end];
@@ -51,7 +53,7 @@ public class String1 {
         	str[start] = holder;
         	start++;
         	end--;
-        	
+        }
     	}
        
         	
