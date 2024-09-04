@@ -29,10 +29,32 @@ public class String1 {
         for(int i = 0; i < s.length(); i++)
             append(s.getChar(i));
     }
-    public boolean equal(String1 s) {
-        throw new UnsupportedOperationException("equal() function is not supported yet.");
+      public boolean equal(String1 s) {
+    	boolean equality = true;
+        for(int i = 0 ; i <= size ; i++){
+	    if(s.getChar(i) != str[i]) 
+	    	equality = false;
+
+        }
+        
+	    return equality;
+	    	
+	
     }
     public void reverse() {
-        throw new UnsupportedOperationException("reverse() function is not supported yet.");
-    }
+        int start = 0 ;
+        int end = size;
+        char holder = str[end];
+        while(end > start) {
+        	holder = str[end];
+        	str[end] = str[start];
+        	str[start] = holder;
+        	start++;
+        	end--;
+        	
+    	}
+       
+        	
+        	
+        }
 }
