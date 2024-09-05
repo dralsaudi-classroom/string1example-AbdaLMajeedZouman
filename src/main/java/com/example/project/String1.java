@@ -34,12 +34,8 @@ public class String1 {
         for(int i = 0 ; i <= size ; i++){
 	    if(s.getChar(i) != str[i]) 
 	    	equality = false;
-
-        }
-        
+	}
 	    return equality;
-	    	
-	
     }
     public void reverse() {
     	if(length() - 1 != -1) {
