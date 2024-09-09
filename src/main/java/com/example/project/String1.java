@@ -29,7 +29,7 @@ public class String1 {
         for(int i = 0; i < s.length(); i++)
             append(s.getChar(i));
     }
-      public boolean assertEqual(String1 s) {
+      public boolean equal(String1 s) {
     	boolean equality = true;
         for(int i = 0 ; i <= size ; i++){
 	    if(s.getChar(i) != str[i]) 
