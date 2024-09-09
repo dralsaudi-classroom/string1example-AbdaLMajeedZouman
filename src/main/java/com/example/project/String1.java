@@ -1,5 +1,7 @@
 package com.example.project;
 
+
+
 public class String1 {
 	private char[] str;
 	private int size;
@@ -30,13 +32,20 @@ public class String1 {
             append(s.getChar(i));
     }
       public boolean equal(String1 s) {
-    	boolean equality = true;
+    	  boolean equality = false;
+    	  if(s.getSize() == -1 && getSize() == -1)
+    		  equality = true;
+    	  
         for(int i = 0 ; i <= size ; i++){
-	    if(s.getChar(i) != str[i]) 
+	    if(s.getChar(i) == str[i] ) 
+	    	equality = true;
+	    else
 	    	equality = false;
 	}
-	    return equality;
-    }
+        return equality;
+      }
+    	
+    	  
     public void reverse() {
     	if(length() - 1 != -1) {
 
@@ -51,8 +60,19 @@ public class String1 {
         	end--;
         }
     	}
+    	
+    	}
+     public int getSize() {
+      return this.size;
        
         	
         	
         }
+     public void print() {
+     	for(int i = 0 ; i <= size; i++) {
+     		System.out.print(str[i]);
+     	}
+     	System.out.println();
+     }
 }
+
